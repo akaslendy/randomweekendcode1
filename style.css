@@ -1,0 +1,290 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html { 
+    font-family: 'Work Sans', sans-serif;
+    width: 1920px;
+    max-width: 1920;
+    height: 1080px;
+    max-height: 100vh;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      background-color: #D29A15;
+      width: 1920px;
+      height: 65px;
+    }
+    
+    header, div {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    
+    th, td {
+      padding-top: 3px; 
+    }
+    
+    tr, td {
+      padding-bottom: 3px;
+      padding-right: 22%;
+    }
+    
+    button {
+      background-image: linear-gradient(#f7f8fa ,#e7e9ec);
+      border-color: #adb1b8 #a2a6ac #8d9096;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 3px;
+      box-shadow: rgba(255,255,255,.6) 0 1px 0 inset;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      color: #0f1111;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 14px;
+      height: 29px;
+      font-size: 13px;
+      outline: 0;
+      overflow: hidden;
+      padding: 0 11px;
+      text-align: center;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+    }
+    
+    button:active {
+      color: #97C2DC;
+    }
+    
+    form, input[type=text] {
+      box-sizing: border-box;
+      border: none;
+      float: right;
+      margin-left: 80%;
+      font-size: 17px; 
+      text-transform: uppercase;
+    }
+    
+    input[type=text]:hover {
+      color: #dee5bb;
+    }
+    
+    div, svg {
+      height: 50px;
+    
+    }
+    
+    #main {
+      height: fit-content;
+    }
+    
+    #nav {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: black 3px;
+      border-style: solid none;
+      background-color: #f8f8ff;
+    }
+    
+    .nav-link {
+      font-size: 2rem;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 30px;
+      text-decoration: none;
+      color: black;
+    }
+    
+    .nav-link:visited {
+      color: #97C2DC;
+    }
+    
+    .nav-link:hover {
+      color: #97C2DC;
+      text-decoration: underline;
+    }
+    
+    #backgroundimage {
+      height: 750px;
+      border: solid black 5px;
+      padding: 0%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://images.unsplash.com/photo-1563166423-482a8c14b2d6?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTMyNDU4ODI&ixlib=rb-1.2.1&q=80);
+    }
+    
+    #backgroundoverlay {
+      background-color: rgba(0, 0, 0, 0.66);
+        height: 100%;
+        width: 100%;
+      padding-top: 0%;
+    }
+    
+    .slide-row {
+        display: flex;
+        width: 3200px;
+    }
+
+    .slide-col {
+        width: 800px;
+        height: 400px;
+        position: relative;
+    }
+    
+    .user-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+
+    .user-img img {
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .user-text {
+        background: white;
+        width: 520px;
+        height: 270px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 10px;
+        padding: 45px;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+
+    .user-text p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .user-text h3 {
+        margin: 35px 0 5px;
+        color: #D29A15;
+    }
+
+    .container {
+        width: 800px;
+        height: 400px;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    .indicator {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -50px;
+    }
+
+    .btn {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin: 4px;
+        border-radius: 15px;
+        background: white;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .active {
+        width: 45px;
+    }
+
+    .testimonial {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #end {
+      background: linear-gradient(180deg, #574D44 0%, #7F776E 100%);
+      display: flex;
+      justify-content: space-between;
+       width: 1920px;
+      height: 78px;
+    }
+    
+    .footer-l {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 100;
+      padding-left: 2%;
+      padding-top: 15px;
+      padding-bottom: 0%;
+    }
+    
+    #ad {
+      fill: white;
+      position: absolute;
+      left: 90%;
+      margin-top: 5px;
+      height: 50px;
+      width: 50px;
+      padding: 0%;
+      box-sizing: border-box;
+    }
